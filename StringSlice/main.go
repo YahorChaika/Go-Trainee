@@ -5,7 +5,7 @@ import "fmt"
 func main() {
     slice := []string{"apple", "banana", "apple", "orange", "banana", "kiwi"}
 
-    result := []string{}
+    result := make([]string, 0, len(slice))
     seen := map[string]bool{}     
 
     for _, str := range slice {
